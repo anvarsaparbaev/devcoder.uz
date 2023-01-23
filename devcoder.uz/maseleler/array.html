@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+ <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      p {
+      font-size: 20px;
+      font-family: Arial;
+      }
+
+      h1{
+        text-align:center;  
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="starter-template.css" rel="stylesheet">
+  </head>
+  <BODY onkeydown="return noCTRL(event)" onmousedown="return false;" onselectstart="return false;" bottomMargin=0 background="img/bg.gif" leftMargin=0 topMargin=0 rightMargin=0 marginwidth="0" marginheight="0">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand" href="#">Bas bet</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+ <a class="navbar-brand" href="/maseleler">Maseleler</a>
+ <a class="navbar-brand" href="/login">Sheshimleri</a>
+</nav>
+
+<main role="main" class="container">
+
+<table border=0 cellspacing="0"  cellpadding="0" width=0 align=" ">
+ 
+  <tr>
+    <td>
+  <!-- table2 tanasi -->
+  <table align="left" width="90%" border="0"  cellpadding="0" cellspacing="0">
+  <tr>
+     <p>&nbsp;</p>
+    <p>&nbsp;</p>
+	<p><strong><h1> Bir o'lchamli massivlar bilan ishlash </h1> </strong></p>
+    
+         <p><strong><a href="#kiritish" name="top">1. Massivni hosil qilish va elementlarini kiritish </a></strong></p>
+     <p><a href="#taxlil">2. Massiv  elementlarini taxlil qilish</a></p>
+         <p><a href="#birnechta">3. Bir nechta massiv bilan ishlash</a></p>
+         <p><a href="#ozgartirish">4. Massiv elementlarini o’zgartirish</a></p>
+         <p><a href="#ochirish">5. Massivga element qo’shish va o’chirish</a></p>
+         <p><a href="#saralash">6. Massivni  saralash</a></p>
+         <p><a href="#butun">7. Butun sonlar seriyasi</a></p>
+         <p><a href="#tekislik">8. Tekislikda  nuqtalar to’plami</a></p>
+         <p>&nbsp;</p>
+         <p><strong><a name="kiritish" href="#top">1. Massivni hosil qilish va elementlarini kiritish </a></strong></p>
+         <p>           Massivni hosil qilish masalalarida massiv o’lchami 10  dan oshmaydi deb qabul qilinsin.</p>
+         <p><strong>Array1</strong>. n natural soni berilgan. Dastlabki n ta toq sondan  tashkil topgan massivni hosil qiling va elementlarini chiqaring.</p>
+         <p><strong>Array2</strong>. n natural soni berilgan. 2 sonining dastlabki n ta  darajasidan tashkil topgan massivni hosil qiling va elementlarini chiqaring. (1,  2, 4, 8, ….)</p>
+         <p><strong>Array3</strong>. n natural soni va arifmetik progressiyaning dastlabki  hadi A va ayirmadi D berilgan. Arifmetik progressiyaning dastlabki n ta hadidan  tashkil topgan massivni hosil qiling va elementlarini chiqaring. A<sub>i</sub>  = A<sub>i-1</sub> + D </p>
+         <p><strong>Array4</strong>. n natural soni va geometrik progressiyaning  dastlabki hadi A va maxraji D berilgan. Geometrik progressiyaning dastlabki n  ta hadidan tashkil topgan massivni hosil qiling va elementlarini chiqaring. A<sub>i</sub>  = A<sub>i-1</sub> * D </p>
+         <p><strong>Array5</strong>. n natural soni berilgan. Dastlabki n ta Fibonachchi sonlaridan tashkil  topgan massivni hosil qiling va elementlarini chiqaring. <br>
+              F0 = 1; F1 = 1; F[k] = F[k-1] + F[k-2];     k=2, 3, 4, …</p>
+         <p><strong>Array6</strong>. n natural soni va A, B butun sonlari berilgan (n  &gt; 2). a[0] = A; a[1] = B; boshqa elementlari o’zidan oldingi barcha  elementlari yig’indisiga teng bo’lgan massivni hosil qiling va elementlarini  chiqaring.</p>
+         <p><strong>Array7</strong>. n ta elementdan tashkil topgan massiv  berilgan. Uning elementlarini teskari tartibda chiqaruvchi programma tuzilsin.</p>
+         <p><strong>Array8</strong>. n ta elementdan tashkil topgan massiv  berilgan. Massiv elementlari orasidan toqlarini indekslari o’sish tartibida  chiqaruvchi va ularning sonini chiqaruvchi programma tuzilsin. <br>
+           Massiv elementlar: 4 5 7 8 6 9<br>
+           Natija: 5 7 9 toqlar soni = 3</p>
+         <p><strong>Array9</strong>. n ta elementdan tashkil topgan massiv  berilgan. Massiv elementlari orasidan juftlarini indekslari kamayish tartibida  chiqaruvchi va ularning sonini chiqaruvchi programma tuzilsin. <br>
+           Massiv elementlar: 4 5 7 8 6 9<br>
+           Natija: 6 8 4 juftlar soni = 3</p>
+         <p><strong>Array10</strong>. n ta elementdan tashkil topgan massiv berilgan.  Dastlab massiv elementlari orasidan juftlarini indekslari o’sish tartibida  chiqaruvchi, keyin massiv elementlari orasidan toqlarini indekslari kamayish  tartibida chiqaruvchi programma tuzilsin.  <br>
+           Massiv  elementlar: 4 5 7 8 6 9<br>
+           Natija: 4 8 6 9 7 5</p>
+         <p><strong>Array11</strong>. n ta elementdan tashkil topgan massiv va  K butun soni berilgan (1 &lt;= K &lt; n). Massiv elementlari orasidan indeksi K  ga karralilarini chiqaruvchi programma tuzilsin. A<sub>k</sub>, A<sub>2k</sub>,  A<sub>3k</sub>, …. Shart operatori ishlatilmasin.</p>
+         <p><strong>Array12</strong>. n ta elementdan tashkil topgan massiv  berilgan (n juft son). Massiv elementlari orasidan quyidagilarini chiqaruvchi  programma tuzilsin. A[0], A[2], A[4], … Shart  operatori ishlatilmasin.</p>
+         <p><strong>Array13</strong>. n ta elementdan tashkil topgan massiv  berilgan (n toq son). Massiv elementlari orasidan quyidagilarini chiqaruvchi  programma tuzilsin. A[n-1], A[n-3],  … A[1]  . Shart operatori ishlatilmasin.</p>
+         <p><strong>Array14</strong>. n ta elementdan tashkil topgan massiv  berilgan. Dastlab massiv elementlari orasidan juft indekslilarini keyin toq  indekslilarini chiqaruvchi programma tuzilsin. <br>
+           A[0], A[2], A[4],  … A[1], A[3], A[5],.... Shart operatori  ishlatilmasin.</p>
+         <p><strong>Array15</strong>. n ta elementdan tashkil topgan massiv  berilgan (n juft son). Dastlab massiv elementlari orasidan toq indekslilarini o’shish  tartibida keyin juft indekslilarini kamayish tartibida chiqaruvchi programma  tuzilsin.  A[1], A[3],  A[5],.. A[6], A[4], A[2], A[0].  Shart operatori ishlatilmasin.</p>
+         <p><strong>Array16</strong>. n ta elementdan tashkil topgan massiv  berilgan. Massiv elementlarini quyidagicha chiqaruvchi programma tuzilsin.  <br>
+           A[0], A[n-1], A[1],  A[n-2], A[2], A[n-3],…</p>
+         <p><strong>Array17</strong>. n ta elementdan tashkil topgan massiv  berilgan. Massiv elementlarini quyidagicha chiqaruvchi programma tuzilsin.  A[0], A[1], A[n-1],  A[n-2], A[3], A[4], A[n-3], A[n-4], ... </p>
+         <p><a name="taxlil" href="#top">2. Massiv  elementlarini taxlil qilish</a></p>
+         <p><strong>Array18</strong>. n ta elementdan tashkil topgan massiv  berilgan. Massiv oxirgi elementidan kichkina bo’lgan birinchi elementni  chiqaruvchi programma tuzilsin. Agar bunday element bo’lmasa, nol chiqarilsin.</p>
+         <p><strong>Array19</strong>. n ta elementdan tashkil topgan massiv  berilgan. Massiv oxirgi elementidan kichkina va dastlabki elementidan katta  bo’lgan oxirgi element indeksini chiqaruvchi programma tuzilsin. Agar bunday  element bo’lmasa, nol chiqarilsin. (a[0] &lt; a[k] &lt; a[n-1])</p>
+         <p><strong>Array20</strong>. N ta elementdan tashkil topgan massiv va   K, L butun sonlari berilgan. (0 &lt;= K  &lt;= L &lt; N).  Massivning K va L  indekslari orasidagi elementlari yig’indisini chiqaruvchi programma tuzilsin. </p>
+         <p><strong>Array21</strong>. N ta elementdan tashkil topgan massiv  va  K, L butun sonlari berilgan. (0 &lt;=  K &lt;= L &lt; N).  Massivning K va L  indekslari orasidagi elementlarining o’rta arifmetigini chiqaruvchi programma  tuzilsin. </p>
+         <p><strong>Array22</strong>. N ta elementdan tashkil topgan massiv  va  K, L butun sonlari berilgan. (0 &lt;=  K &lt;= L &lt; N).  Massivning K va L  indekslari orasidagi elementlaridan tashqari elementlari yig’indisini  chiqaruvchi programma tuzilsin. </p>
+         <p><strong>Array23</strong>. N ta elementdan tashkil topgan massiv  va  K, L butun sonlari berilgan. (0 &lt;=  K &lt;= L &lt; N).  Massivning K va L  indekslari orasidagi elementlaridan tashqari elementlarining o’rta arifmetigini  chiqaruvchi programma tuzilsin. </p>
+         <p><strong>Array24</strong>. n ta elementdan tashkil topgan massiv  berilgan. Massiv elementlari arifmetik progressiyani tashkil qilsa, ayirmani  aks holda nolni chiqaruvchi programma tuzilsin. </p>
+         <p><strong>Array25</strong>. n ta elementdan tashkil topgan massiv  berilgan. Massiv elementlari geometrik progressiyani tashkil qilsa, maxrajni aks  holda nolni chiqaruvchi programma tuzilsin. </p>
+         <p><strong>Array26</strong>. n ta elementdan tashkil topgan massiv  berilgan. Massivda juft va toq elementlar ketma – ket kelishini tekshiruvchi  programma tuzilsin. Ketma – ketlik bajarilsa nol chiqarilsin. Aks holda ketma –  ketlikni buzgan birinchi element indeksi chiqarilsin. </p>
+         <p><strong>Array27</strong>. n ta elementdan tashkil topgan massiv  berilgan. Massivda musbat va manfiy qiymatlar ketma – ket kelishini  tekshiruvchi programma tuzilsin. Ketma – ketlik bajarilsa nol chiqarilsin. Aks  holda ketma – ketlikni buzgan birinchi element indeksi chiqarilsin.</p>
+         <p><strong>Array28</strong>. n ta elementdan tashkil topgan massiv  berilgan. Massiv juft indeksli elementlari orasidan kichigini aniqlovchi  programma tuzilsin. min(a0, a2, a4, …)</p>
+         <p><strong>Array29</strong>. n ta elementdan tashkil topgan massiv  berilgan. Massiv toq indeksli elementlari orasidan kattasini aniqlovchi  programma tuzilsin. max(a1, a3, a5, …)</p>
+         <p><strong>Array30</strong>. n ta elementdan tashkil topgan massiv  berilgan. Massiv elementlari orasida, o’ng qo’shnisidan katta bo’lgan  elementlarining indeksini o’sish tartibida chiqaruvchi va ularning sonini chiqaruvchi  programma tuzilsin. </p>
+         <p><strong>Array31</strong>. n ta elementdan tashkil topgan massiv  berilgan. Massiv elementlari orasida, chap qo’shnisidan katta bo’lgan  elementlarining indeksini kamayish tartibida chiqaruvchi va ularning sonini chiqaruvchi  programma tuzilsin. </p>
+         <p><strong>Array32</strong>. n ta elementdan tashkil topgan massiv  berilgan. Massiv elementlari orasidan birinchi uchragan lokal minimum elementi  indeksini chiqaruvchi programma tuzilsin. Lokal minimum – o’ng va chap qo’shinisidan  kichik bo’lgan element.</p>
+         <p><strong>Array33</strong>. n ta elementdan tashkil topgan massiv  berilgan. Massiv elementlari orasidan oxirgi lokal maksimum elementi indeksini chiqaruvchi  programma tuzilsin. Lokal maksimum – o’ng va chap qo’shinisidan katta bo’lgan element.</p>
+         <p><strong>Array34</strong>. n ta elementdan tashkil topgan massiv  berilgan. Massiv lokal minimumlari orasidan kattasini chiqaruvchi programma  tuzilsin. Lokal minimum – array32 masalada berilgan.</p>
+         <p><strong>Array35</strong>. n ta elementdan tashkil topgan massiv  berilgan. Massiv lokal maksimumlari orasidan kichigini chiqaruvchi programma  tuzilsin. Lokal maksimum – array33 masalada berilgan.</p>
+         <p><strong>Array36</strong>. n ta elementdan tashkil topgan massiv  berilgan. Massivning lokal minimum yoki lokal maksimum bo’lmagan elementlari  orasidan kattasini chiqaruvchi programma tuzilsin. Agar bunday element bo’lmasa  nol chiqarilsin. (array32, array33 masalalarga qarang)</p>
+         <p><strong>Array37</strong>. n ta elementdan tashkil topgan massiv  berilgan. Massiv elementlari orasidan monoton o’suvchi oraliqlar sonini chiqaruvchi  programma tuzilsin. </p>
+         <p><strong>Array38</strong>. n ta elementdan tashkil topgan massiv  berilgan. Massiv elementlari orasidan monoton kamayuvchi oraliqlar sonini chiqaruvchi  programma tuzilsin. </p>
+         <p><strong>Array39</strong>. n ta elementdan tashkil topgan massiv  berilgan. Massiv elementlari orasidan monoton oraliqlar sonini chiqaruvchi programma  tuzilsin. (array37, array38 masalalarga qarang)</p>
+         <p><strong>Array40</strong>. n ta elementdan tashkil topgan massiv va  R butun soni berilgan. Massiv elementlari orasidan R soniga eng yaqin sonni  topuvchi programma tuzilsin. <br>
+           ( |a[k] - R| ayirma eng kichik bo’luvchi a[k] topilsin )</p>
+         <p><strong>Array41</strong>. n ta elementdan tashkil topgan massiv  berilgan. Massiv elementlari orasidan yig’indisi eng katta bo’ladigan 2 ta qo’shini  elementni chiqaruvchi programma tuzilsin.</p>
+         <p><strong>Array42</strong>. n ta elementdan tashkil topgan massiv va  R butun soni berilgan. Massiv elementlari orasidan R soniga yig’indisi eng  yaqin 2 ta qo’shni elementni chiqaruvchi programma tuzilsin.  (array40, array41 masalalarga qarang)</p>
+         <p><strong>Array43</strong>. n ta elementdan tashkil topgan massiv  elementlari tartiblangan holda (o’sish yoki kamayish) berilgan. Massivning har  hil qiymatli elementlari sonini chiqaruvchi programma tuzilsin.</p>
+         <p><strong>Array44</strong>. n ta elementdan tashkil topgan massiv berilgan.  Massiv elementlari orasida aniq 2 ta bir xil qiymatli element bor. Shu bir xil  qiymatli elementlar indeksini chiqaruvchi programma tuzilsin.</p>
+         <p><strong>Array45</strong>. n ta elementdan tashkil topgan massiv berilgan.  Massiv elementlari orasidan bir - biriga  eng yaniq qo’shnilar indeksini chiqaruvchi programma  tuzilsin. (ayirmasining moduli eng kichik bo’lgan elementlari indeksi)</p>
+         <p><strong>Array46</strong>. n ta elementdan tashkil topgan massiv va  R butun soni berilgan. Massiv elementlari orasidan R soniga yig’indisi eng  yaqin 2 ta elementni chiqaruvchi programma tuzilsin.  (array40, array42 masalalarga qarang)</p>
+         <p><strong>Array47</strong>. n ta elementdan tashkil topgan massiv berilgan.  Massivda qatnashgan sonlardan faqat bittadan chiqaruvchi programma tuzilsin. <br>
+           Berilgan massiv: 7 4 2 3 1 4 5 2 4 7; <br>
+           Natija: 7 4 2 3 1 5 </p>
+         <p><strong>Array48</strong>. n ta elementdan tashkil topgan massiv berilgan.  Massivda eng ko’p qatnashgan bir xil qiymatli element sonini chiqaruvchi programma  tuzilsin.</p>
+         <p><strong>Array49</strong>. n ta elementdan tashkil topgan massiv berilgan.  Agar massiv 1 dan n gacha bo’lgan sonlarning o’rin almashtirilishidan hosil bo’lgan  bo’lsa, nol chiqarilsin. Aks holda birinchi uchragan nojoiz kiritilgan element  indeksini chiqaruvchi programma tuzilsin.</p>
+         <p><strong>Array50</strong>. n ta elementdan tashkil topgan massiv berilgan. Massiv  elementlari orasidan o’ng qo’shnisidan katta bo’lganlar sonini chiqaruvchi programma  tuzilsin.         </p>
+         <p><a name="birnechta" href="#top">3. Bir nechta massiv bilan ishlash</a> </p>
+         <p><strong>Array51</strong>.  n  ta elementdan tashkil topgan a va b massiv berilgan. a va b  massiv qiymatlarini almashtiruvchi va ekranga  oldin a massivni keyin b massivni chiqaruvchi programma tuzilsin.</p>
+         <p><strong>Array52</strong>. n ta elementdan tashkil topgan a massiv  berilgan. b massivni hosil qiling. Agar a[i] &lt; 5 bo’lsa, b[i] = 2 * a[i];  aks holda b[i] = a[i]/2;</p>
+         <p><strong>Array53</strong>. n ta elementdan tashkil topgan a va b  massiv berilgan. c massivni hosil qiling.  c[i] = max (a[i], b[i]), ya’ni  c massiv elementi a va b massiv elementlaridan  kattasini qabul qilsin. </p>
+         <p><strong>Array54.</strong>  n  ta elementdan iborat butun sonlardan tashkil topgan a massiv berilgan. a  massivning juft elementlaridan tashkil topgan b massivini hosil qiling. b  massiv elementlari soni va elementlari chiqarilsin.</p>
+         <p><strong>Array55.</strong> n ta butun sonlardan iborat a massiv  berilgan (n &lt;= 15).  a massivining toq  indeksdagi elementlaridan b massivni hosil qiling (a1, a3, …). b massiv  elementlari soni va elementlarini chiqaruvchi programma tuzing. Shart operatori  ishlatilmasin.</p>
+     <p><strong>Array56.</strong> n ta butun sonlardan iborat a massiv  berilgan (n &lt;= 15). a massivining 3 ga karrali indeksdagi elementlaridan b  massivni hosil qiling (a3, a6, …). b massiv elementlari soni va elementlarini  chiqaruvchi programma tuzing. Shart operatori ishlatilmasin.</p>
+     <p><strong>Array57.</strong> n ta butun sonlardan iborat a massiv  berilgan. b massivni hosil qiling. b massiv oldin a massivining juft indeksdagi  elementlarini, keyin toq indeksdagi elementlarini o’zlashtirsin (a0, a2, a4, a6  …, a1, a3, …). b massiv elementlarini chiqaruvchi programma tuzing. Shart  operatori ishlatilmasin.</p>
+     <p><strong>Array58.</strong> n ta butun sonlardan iborat a massiv  berilgan. n ta elementdan tashkil topgan b massivni hosil qiling. b massiv  elementlari quyidagicha hosil qilinadi: b[k] = a[0] + … + a[k];</p>
+     <p><strong>Array59.</strong> n ta butun sonlardan iborat a massiv  berilgan. n ta elementdan tashkil topgan b massivni hosil qiling. b massiv  elementlari quyidagicha hosil qilinadi: b[k] = (a[0] + … + a[k]) / k;</p>
+     <p><strong>Array60</strong>. n ta butun sonlardan iborat a massiv  berilgan. n ta elementdan tashkil topgan b massivni hosil qiling. b massiv  elementlari quyidagicha hosil qilinadi: b[k] = a[k] + … + a[n-1], ya’ni a  massivning k – elementdan boshlab massiv oxirigacha bo’lgan elementlari  yig’indisiga teng.</p>
+     <p><strong>Array61</strong>. n ta butun sonlardan iborat a massiv  berilgan. n ta elementdan tashkil topgan b massivni hosil qiling. b massiv  elementlari quyidagicha hosil qilinadi: b[k] a massivning k – elementdan  boshlab massiv oxirigacha bo’lgan elementlari yig’indisining o’rta arifmetigiga  teng.</p>
+     <p><strong>Array62</strong>. n ta butun sonlardan iborat a massiv  berilgan. a massivning musbat elementlaridan tashkil topgan b va manfiy  elementlaridan tashkil  topgan c massivni  hosil qiling. Oldin b massiv elementlari soni va elementlarini, keyin c massiv  elementlari soni va elementlarini chiqaruvchi programma tuzilsin.</p>
+     <p><strong>Array63</strong>. 5 ta elementdan tashkil topgan a va b  massivlari berilgan. Har bir massiv elementlari o’sish tartibida kiritiladi. 10  ta elementdan tashkil topgan c massivini hosil qilingki, c massiv elementlari o’sish  tartibida joylashtirilgan bo’lsin. Masalan: a = {1, 2, 3, 4}; b = {5, 6, 7, 8}; Natija c = {1, 2, 3, 4, 5, 6, 7, 8} </p>
+     <p><strong>Array64</strong>. n ta elementdan tashkil topgan a, b, c  massivlari berilgan. Har bir massiv elementlari mos ravishda o’sish tartibida  kiritiladi. 3*n ta elementdan tashkil topgan d massivini hosil qilingki, d  massiv elementlari o’sish tartibida joylashtirilgan bo’lsin.</p>
+     <p ><a name="ozgartirish" href="#top">4. Massiv elementlarini o’zgartirish</a></p>
+     <p><strong>Array65. </strong>n ta butun sonlardan iborat a massiv va k  butun soni berilgan (1 &lt;= k &lt;= n). Massivning har bir elementini a[k] ga  orttiruvchi programma tuzilsin.<strong></strong></p>
+     <p><strong>Array66.</strong> n ta butun sonlardan iborat massiv  berilgan. Massivdagi har bir juft sonni birinchi uchragan juft songa  orttiruvchi programma tuzilsin. Agar juft sonlar bo’lmasa, massiv o’zgarishsiz  qoldirilsin.</p>
+     <p><strong>Array67.</strong> n ta butun sonlardan iborat massiv  berilgan. Massivdagi har bir toq sonni oxirgi toq songa orttiruvchi programma  tuzilsin. Agar toq sonlar bo’lmasa, massiv o’zgarishsiz qoldirilsin.</p>
+     <p><strong>Array68.</strong> n ta elementdan iborat massiv berilgan.  Massivning eng kichik va eng katta elementlari o’rni almashtirilsin.</p>
+     <p><strong>Array69.</strong> n ta elementdan iborat massiv berilgan (n  juft son). Massivning nolinchi bilan birinchi, ikkinchi bilan uchinchi, …,  elementlari o’rni almashtirilsin.</p>
+     <p><strong>Array70.</strong> n ta elementdan iborat massiv berilgan (n  juft son). Massivning birinchi yarmi va ikkinchi yarmi qiymatlari  almashtirilsin.</p>
+     <p><strong>Array71.</strong> n ta elementdan iborat massiv berilgan.  Massivning elementlari teskari tartibda joylashtirilsin. (DIQQAT: Sizdan teskari tartibda chiqarish talab qilinayotgani yo'q. a[0] element a[n-1] bilan almashsin, va hakazo, teskari tartibda joylashtirish talab qilinyapti) </p>
+     <p><strong>Array72. </strong>n ta butun sonlardan iborat a massiv va k,  h butun soni berilgan (1 &lt;= k &lt; h &lt;= n). Massivning a[k] va a[h]  elementlari orasidagi qiymatlarni almashtiruvchi programma tuzilsin. a[k] va  a[h] elementlari bilan birgalikda.<strong></strong></p>
+     <p><strong>Array73. </strong>n ta butun sonlardan iborat a massiv va k,  h butun soni berilgan (1 &lt;= k &lt; h &lt;= n). Massivning a[k] va a[h]  elementlari orasidagi qiymatlarni almashtiruvchi programma tuzilsin. a[k] va  a[h] elementlarisiz.<strong></strong></p>
+     <p><strong>Array74. </strong>n ta butun sonlardan iborat a massiv  berilgan. Massivning eng kichik va eng katta elementlari orasidagilarini nolga  almashtiruvchi programma tuzilsin. Eng kichik va eng katta elementlari  o’zgarishsiz qoldirilsin.</p>
+     <p><strong>Array75. </strong>n ta butun sonlardan iborat a massiv  berilgan. Massivning eng kichik va eng katta elementlari orasidagi  elementlarini teskari tartibda joylashtiruvchi programma tuzilsin. Eng kichik  va eng katta elementlari bilan birgalikda.</p>
+     <p><strong>Array76. </strong>n ta butun sonlardan iborat a massiv  berilgan. Massivning barcha lokal maksimumlarini nolga aylantiruvchi programma  tuzilsin. (o’ng va chap qo’shnilaridan katta bo’lgan element – lokal maksimum  deyiladi)</p>
+     <p><strong>Array77. </strong>n  ta butun sonlardan iborat a massiv berilgan. Massivning barcha lokal  minimumlarini kvadratga oshiruvchi programma tuzilsin. (o’ng va chap  qo’shnilaridan kichik bo’lgan element – lokal minimum deyiladi)     </p>
+     <p><strong>Array78. </strong>n ta sonlardan iborat a massiv berilgan. Massivning  har bir elementini, uning o’ng qo’shnisi bilan o’rta arifmetigiga  almashtiruvchi programma tuzilsin.</p>
+     <p><strong>Array79</strong>. n ta elementdan tashkil topgan massiv  berilgan. Massiv elementlarini bir qadam o’ngga siljituvchi programma tuzilsin.  a[0] element qiymati a[1] ga o’tadi, a[1] esa a[2] ga, … massivning oxirgi  elementi tashlab yuboriladi. Hosil bo’lgan massivda a[0] = 0 bo’lsin.</p>
+     <p><strong>Array80</strong>. n ta elementdan tashkil topgan massiv  berilgan. Massiv elementlarini bir qadam chapga siljituvchi programma tuzilsin.  a[n-1] element qiymati a[n-2] ga o’tadi, a[n-2] esa a[n-3] ga, … massivning 0 -  elementi tashlab yuboriladi. Hosil bo’lgan massivning oxirgi elementi qiymati  nolga teng bo’lsin.</p>
+     <p><strong>Array81</strong>. n ta elementdan tashkil topgan massiv va  k butun soni berilgan (1 &lt;= k &lt; n). Massiv elementlarini k ta o’rin o’ngga  siljituvchi programma tuzilsin. a[0] element qiymati a[k] ga o’tadi, a[1] esa a[k  + 1] ga, … massivning oxirgi k ta elementi tashlab yuboriladi. Hosil bo’lgan  massivning dastlabki k ta elementi qiymati nolga teng bo’lsin.</p>
+     <p><strong>Array82</strong>. n ta elementdan tashkil topgan massiv va  k butun soni berilgan (1 &lt;= k &lt; n). Massiv elementlarini k ta o’rin chapga  siljituvchi programma tuzilsin. a[n-1] element qiymati a[n-1-k] ga o’tadi, a[n-2]  esa a[n-2-k] ga, … massivning dastlabki k ta elementi tashlab yuboriladi. Hosil  bo’lgan massivning oxirgi k ta elementi qiymati nolga teng bo’lsin.</p>
+     <p><strong>Array83</strong>. n ta elementdan tashkil topgan berilgan.  Massiv elementlarini 1 ta o’rin ongga siklik siljituvchi programma tuzilsin. a[0]  element qiymati a[1] ga o’tadi, a[1] esa a[2] ga, …, a[n – 1] qiymati a[0] ga  o’tadi.</p>
+     <p><strong>Array84</strong>. n ta elementdan tashkil topgan massiv  berilgan. Massiv elementlarini bir qadam chapga siklik siljituvchi programma  tuzilsin. a[n-1] element qiymati a[n-2] ga o’tadi, a[n-2] esa a[n-3] ga, … a[0]  esa a[n-1] ga o’tadi.</p>
+     <p><strong>Array85</strong>. n ta elementdan tashkil topgan massiv va  k butun soni berilgan (1 &lt;= k &lt;=4; k &lt; n). Massiv elementlarini k ta  o’rin o’ngga siklik siljituvchi programma tuzilsin. a[0] element qiymati a[k]  ga o’tadi, a[1] esa a[k + 1] ga, … a[n – 1] esa a[n-1-k] ga o’tadi. 4 ta  elementdan tashkil topgan yordamchi massivdan foydalanish mumkin.</p>
+     <p><strong>Array86</strong>. n ta elementdan tashkil topgan massiv va  k butun soni berilgan (1 &lt;= k &lt;= 4; k &lt; n). Massiv elementlarini k ta  o’rin chapga siklik siljituvchi programma tuzilsin. a[n-1] element qiymati  a[n-1-k] ga o’tadi, a[n-2] esa a[n-2-k] ga, … a[0] esa a[n-k] ga o’tadi.</p>
+     <p><strong>Array87</strong>. n ta elementdan tashkil topgan massiv  berilgan. Massivning dastlabki elementidan boshqalari o’sish tartibi  joylashtirilgan. Massivning dastlabki elementini shunday joylashtiringki,  natijada massiv o’sish tartibida joylashib qolsin.</p>
+     <p><strong>Array88</strong>. n ta elementdan tashkil topgan massiv  berilgan. Massivning oxirgi elementidan boshqalari o’sish tartibi  joylashtirilgan. Massivning oxirgi elementini shunday joylashtiringki, natijada  massiv o’sish tartibida joylashib qolsin.</p>
+     <p><strong>Array89</strong>. n ta elementdan tashkil topgan massiv  berilgan. Massivning bitta elementidan boshqalari o’sish tartibi  joylashtirilgan. Massivning qonuniyatni buzib turgan elementini shunday  joylashtiringki, natijada massiv o’sish tartibida joylashib qolsin.</p>
+     <p><a name="ochirish" href="#top">5. Massivga element qo’shish va o’chirish</a></p>
+     <p><strong>Array90</strong>. n ta elementdan tashkil topgan massiv va  k butun soni berilgan (0&lt;= k &lt; n). Indeksi k ga teng bo’lgan elementni  o’chiruvchi programma tuzilsin.</p>
+     <p><strong>Array91</strong>. n ta elementdan tashkil topgan massiv va  k, m butun sonlari berilgan (0&lt;= k &lt; m &lt; n). Indeksi k dan m gacha bo’lgan  elementlarni o’chiruvchi programma tuzilsin. Hosil bo’lgan massiv elementlar  soni va elementlari chiqarilsin.</p>
+     <p><strong>Array92</strong>. n ta elementdan tashkil topgan massiv  berilgan. Massiv elementlari orasidan toqlarini o’chiruvchi programma tuzilsin.  Hosil bo’lgan massiv elementlar soni va elementlari chiqarilsin.</p>
+     <p><strong>Array93</strong>. n ta elementdan tashkil topgan massiv  berilgan. Massiv elementlari orasidan juft indekslilarini o’chiruvchi programma  tuzilsin. Hosil bo’lgan massiv elementlar soni va elementlari chiqarilsin.  Shart operatori ishlatilmasin.</p>
+     <p><strong>Array94</strong>. n ta elementdan tashkil topgan massiv  berilgan. Massiv elementlari orasidan toq indekslilarini o’chiruvchi programma  tuzilsin. Hosil bo’lgan massiv elementlar soni va elementlari chiqarilsin.  Shart operatori ishlatilmasin.</p>
+     <p><strong>Array95</strong>. n ta elementdan tashkil topgan massiv  berilgan. Massiv elementlari orasidan bir xil qo’shnilarning birini o’chiruvchi  programma tuzilsin. </p>
+     <p><strong>Array96</strong>. n ta elementdan tashkil topgan massiv  berilgan. Massiv elementlari orasidan bir xil qiymatga ega bo’lganlarini o’chiruvchi  programma tuzilsin. Faqat birinchi uchragani qoldirilsin.</p>
+     <p><strong>Array97</strong>. n ta elementdan tashkil topgan massiv  berilgan. Massiv elementlari orasidan bir xil qiymatga ega bo’lganlarini  o’chiruvchi programma tuzilsin. Faqat oxirgi uchragani qoldirilsin.</p>
+     <p><strong>Array98</strong>. n ta elementdan tashkil topgan massiv  berilgan. Massiv elementlari orasidan 3 martadan kam uchraganlarini o’chiruvchi  programma tuzilsin. Hosil bo’lgan massiv elementlar soni va elementlari  chiqarilsin.</p>
+     <p><strong>Array99</strong>. n ta elementdan tashkil topgan massiv  berilgan. Massiv elementlari orasidan  2  martadan ko’p uchraganlarini o’chiruvchi programma tuzilsin. Hosil bo’lgan  massiv elementlar soni va elementlari chiqarilsin.</p>
+     <p><strong>Array100</strong>. n ta elementdan tashkil topgan massiv  berilgan. Massiv elementlari orasidan faqat 2 marta uchraganlarini o’chiruvchi  programma tuzilsin. Hosil bo’lgan massiv elementlar soni va elementlari  chiqarilsin.</p>
+     <p><strong>Array101</strong>. n ta elementdan tashkil topgan massiv va  k butun soni berilgan (0 &lt;= k &lt; n). Indeksi k ga teng bo’lgan element  oldidan qiymati nolga teng bo’lgan element qo’shuvchi programma tuzilsin.</p>
+     <p><strong>Array102</strong>. n ta elementdan tashkil topgan massiv va  k butun soni berilgan (0 &lt;= k &lt; n). Indeksi k ga teng bo’lgan elementdan keyin  qiymati nolga teng bo’lgan element qo’shuvchi programma tuzilsin.</p>
+     <p><strong>Array103</strong>. n ta elementdan tashkil topgan massiv  berilgan. Eng kichik element oldidan va eng katta elementdan keyin, qiymati  nolga teng bo’lgan element qo’shuvchi programma tuzilsin.</p>
+     <p><strong>Array104</strong>. n ta elementdan tashkil topgan massiv va  k, m butun soni berilgan (0 &lt;= k &lt; n; 1&lt;= m &lt;= 10). Indeksi k ga  teng bo’lgan element oldidan, qiymati nolga teng bo’lgan m ta element  qo’shuvchi programma tuzilsin.</p>
+     <p><strong>Array105</strong>. n ta elementdan tashkil topgan massiv va  k, m butun soni berilgan (0 &lt;= k &lt; n; 1&lt;= m &lt;= 10). Indeksi k ga  teng bo’lgan elementdan keyin, qiymati nolga teng bo’lgan m ta element  qo’shuvchi programma tuzilsin.</p>
+     <p><strong>Array106</strong>. n ta elementdan tashkil topgan massiv  berilgan. Massivga, massivning juft indeksli elementlarini qo’shuvchi programma  tuzilsin. Shart operatori ishlarilmasin.</p>
+     <p><strong>Array107</strong>. n ta elementdan tashkil topgan massiv  berilgan. Massivga, massivning toq indeksli elementlarini 2 marta qo’shuvchi  programma tuzilsin. Shart operatori ishlarilmasin.</p>
+     <p><strong>Array108</strong>. n ta elementdan tashkil topgan massiv  berilgan. Massivning har bir musbat elementi oldidan, qiymati nolga teng  element qo’shuvchi programma tuzilsin. </p>
+     <p><strong>Array109</strong>. n ta elementdan tashkil topgan massiv  berilgan. Massivning har bir manfiy elementidan keyin, qiymati nolga teng  element qo’shuvchi programma tuzilsin. </p>
+     <p><strong>Array110</strong>. n ta elementdan tashkil topgan massiv  berilgan. Massivga, massivning juft elementlarini qo’shuvchi programma  tuzilsin.</p>
+     <p><strong>Array111</strong>. n ta elementdan tashkil topgan massiv  berilgan. Massivga, massivning toq elementlarini 2 marta qo’shuvchi programma  tuzilsin. </p>
+     <p>&nbsp;</p>
+     <p><a name="saralash" href="#top">6. Massivni  saralash</a></p>
+     <p><strong>Array112</strong>. n ta elementdan tashkil topgan massiv  berilgan. Oddiy o’rin almashtirish (pufaksimon saralash) algoritmi orqali  massivni o’sish tartibida chiqaruvchi programma tuzilsin. <br>
+       Algoritm quyidagicha: Har bir element  o’zidan keyin turgan elementlar bilan solishtiriladi. Agar o’zidan keyin turgan  element undan kichik bo’lsa ularni qiymati almashtiriladi.</p>
+     <p><strong>Array113</strong>. n ta elementdan tashkil topgan massiv  berilgan. Oddiy tanlash (selection sort) algoritmi orqali massivni o’sish  tartibida chiqaruvchi programma tuzilsin. <br>
+       Algoritm quyidagicha: Har bir element  o’zidan keyin turgan elementlarning eng kichigi bilan almashtiriladi.</p>
+     <p><strong>Array114</strong>. n ta elementdan tashkil topgan massiv  berilgan. Oddiy qo’shish (insertion sort) algoritmi orqali massivni o’sish  tartibida chiqaruvchi programma tuzilsin. <br>
+       Algoritm quyidagicha: a[0]va a[1]  elementlar o’sish tartibida joylashtiriladi. Ya’ni zarurat bo’lsa qiymatlari  almashtiriladi. Kiyin a[2] element saralangan elementlar (a[0], a[1]) orasiga  shunday joylashtiriladiki, natijada a[0], a[1], a[2]  tartiblangan xolatda bo’ladi. Shu tartibda  har bir element tartiblangan elementlar orasiga qo’shib boriladi.</p>
+     <p><strong>Array115</strong>. n ta elementdan tashkil topgan massiv  berilgan. Massiv elementlarini o’zgartirmasdan, uning indekslarini shunday  chiqaringki, bu indekslar ketmet – ketligida chiqarilgan massiv o’sish  tartibida bo’lib qolsin. Oddiy o’rin almashtirish algoritmidan foydalaning  (Array112). Massiv indekslarini o’zida saqlovchi yordamchi massivdan  foydalanish mumkin.</p>
+     <p><a name="butun" href="#top">7. Butun sonlar seriyasi</a></p>
+     <p><strong>Array116</strong>. n ta elementdan tashkil topgan A massiv  berilgan. Seriya deb, ketma – ket kelgan bir hil elementlar guruhida aytiladi. Seriya  uzunligi esa, bu elementlar soni. (seriya uzunligi 1 bo’lishi mumkin). Butun  sonlardan iborat bo’lgan, elementlar soni bir xil bo’lgan B va C massivni hosil  qiling. B massivga A massivdagi seriyalar uzunligi, C massivga esa seriyani  tashkil qilgan element qiymatini yozing.</p>
+     <p><strong>Array117</strong>. n ta elementdan tashkil topgan massiv  berilgan. Massivning har bir seriyasi oldidan qiymati 0 ga teng bo’lgan element  qo’shing. (Array116 ga qarang)</p>
+     <p><strong>Array118</strong>. n ta elementdan tashkil topgan massiv  berilgan. Massivning har bir seriyasidan keyin qiymati 0 ga teng bo’lgan  element qo’shing. (Array116 ga qarang)</p>
+     <p><strong>Array119</strong>. n ta elementdan tashkil topgan massiv  berilgan. Massivning har bir seriyasiga bir element qo’shuvchi programma  tuzilsin. (Array116 ga qarang)</p>
+     <p><strong>Array120</strong>. n ta elementdan tashkil topgan massiv  berilgan. Massivning kamida 1 ta seriyasi uzunligi birdan katta. Massivning har  bir seriyasini bir elementga kamaytiruvchi programma tuzilsin. (Array116 ga  qarang)</p>
+     <p><strong>Array121</strong>. n ta elementdan tashkil topgan massiv va  K butun soni berilgan (K &gt; 0). Massivning K – seriyasi uzunligini 2 marta oshiruvchi  programma tuzilsin. Agar massivdagi seriyalar soni K dan kam bo’lsa, massiv o’zgarishsiz  qoldirilsin. (Array116 ga qarang)</p>
+     <p><strong>Array122</strong>. n ta elementdan tashkil topgan massiv va  K butun soni berilgan (K &gt; 0). Massivning K – seriyasini o’chiruvchi programma  tuzilsin. Agar massivdagi seriyalar soni K dan kam bo’lsa, massiv o’zgarishsiz  qoldirilsin. (Array116 ga qarang)</p>
+     <p><strong>Array123</strong>. n ta elementdan tashkil topgan massiv va  K butun soni berilgan (K &gt; 1). Massivning K – seriyasi bilan birinchi  seriyasi o’rnini almashtiruvchi programma tuzilsin. Agar massivdagi seriyalar  soni K dan kam bo’lsa, massiv o’zgarishsiz qoldirilsin. (Array116 ga qarang)</p>
+     <p><strong>Array124</strong>. n ta elementdan tashkil topgan massiv va  K butun soni berilgan (K &gt; 0). Massivning K – seriyasi bilan oxirgii  seriyasi o’rnini almashtiruvchi programma tuzilsin. Agar massivdagi seriyalar  soni K dan kam bo’lsa, massiv o’zgarishsiz qoldirilsin. (Array116 ga qarang)</p>
+     <p><strong>Array125</strong>. n ta elementdan tashkil topgan massiv va  K butun soni berilgan (K &gt; 1). Uzunligi K dan kichik bo’lgan seriyalarni  qiymati nol bo'lgan bitta elementga almashtiruvchi programma tuzilsin. (Array116 ga qarang)</p>
+     <p><strong>Array126</strong>. n ta elementdan tashkil topgan massiv va  K butun soni berilgan (K &gt; 1). Uzunligi K ga teng bo’lgan seriyalarni  qiymati nol bo'lgan bitta elementga almashtiruvchi programma tuzilsin. (Array116 ga qarang)</p>
+     <p><strong>Array127</strong>. n ta elementdan tashkil topgan massiv va  K butun soni berilgan (K &gt; 1). Uzunligi K dan katta bo’lgan seriyalarni  qiymati nol bo'lgan bitta elementga almashtiruvchi programma tuzilsin. (Array116 ga qarang)</p>
+     <p><strong>Array128</strong>. n ta elementdan tashkil topgan massiv  berilgan. Uzunligi eng katta bo’lgan, birinchi uchragan seriyaga yangi element  qo’shuvchi programma tuzilsin. (Array116 ga qarang)</p>
+     <p><strong>Array129</strong>. n ta elementdan tashkil topgan massiv  berilgan. Uzunligi eng katta bo’lgan, oxirgi uchragan seriyaga yangi element qo’shuvchi  programma tuzilsin. (Array116 ga qarang)</p>
+     <p> <strong>Array130</strong>. n ta elementdan tashkil  topgan massiv berilgan. Massivning barcha seriyalariga yangi element qo’shuvchi  programma tuzilsin. (Array116 ga qarang)</p>
+     <p>&nbsp;</p>
+     <p><a name="tekislik" href="#top">8. Tekislikda  nuqtalar to’plami</a></p>
+     <p><strong>Array131</strong>. Tekislikdagi N ta nuqta koordinatalari  va B nuqta koordinatasi (x, y) berilgan. B nuqtaga eng yaqin nuqtani aniqlovchi  programma tuzilsin. (x1, y1) va (x2, y2) nutqalar orasidagi masofa quyidagi  formula orqali topiladi:</p>
+     <div align="center"><img src="img/mavzu3_clip_image012.gif" alt="masofa" ></div>
+     <p><strong>Array132</strong>. Tekislikdagi N ta nuqta koordinatalari (x,  y) berilgan. Shu nuqtalar orasidan 2 chorakda yotuvchi va koordinata boshidan  eng uzoq nuqtani aniqlovchi programma tuzilsin. Agar bunday nuqta topilmasa, koordinatalari  0 ga teng bo’lgan nuqta chiqarilsin.</p>
+     <p><strong>Array133</strong>. Tekislikdagi N ta nuqta koordinatalari (x,  y) berilgan. Shu nuqtalar orasidan 1 – yoki 3 – chorakda yotuvchi va koordinata  boshidan eng uzoq nuqtani aniqlovchi programma tuzilsin. Agar bunday nuqta  topilmasa, koordinatalari 0 ga teng bo’lgan nuqta chiqarilsin.</p>
+     <p><strong>Array134</strong>. Tekislikdagi N ta nuqta koordinatalari (x,  y) berilgan. Shu nuqtalar orasidan bir – biridan eng uzoq nuqtalarni aniqlovchi  programma tuzilsin. Ular orasidagi masofa ham chiqarilsin.</p>
+     <p><strong>Array135</strong>. Tekislikda A va B to’plam  koordinatalari (x, y) berilgan. N1 – A to’plamdagi  nutqalar soni, N2 – B to’plamdagi nutqalar soni. Shu to’plamlar orasidan bir –  biriga eng yaqin nuqtalarni aniqlovchi programma tuzilsin. Ular orasidagi masofa  ham chiqarilsin.</p>
+     <p><strong>Array136</strong>. Tekislikdagi N ta nuqta koordinatalari (x,  y) berilgan. Shu nuqtalar orasidan shunday nuqtani topingki, undan boshqa  nuqtalargacha bo’lgan masofalar yig’indisi eng kichik bo’lsin. </p>
+     <p><strong>Array137</strong>. Tekislikdagi N ta nuqta koordinatalari (x,  y) berilgan (N &gt; 2). Shu nuqtalar orasidan perimetri eng katta bo’ladigan  uchburchak uchlari koordinatalarini aniqlovchi programma tuzilsin. </p>
+     <p><strong>Array138</strong>. Tekislikdagi N ta nuqta koordinatalari (x,  y) berilgan (N &gt; 2). Shu nuqtalar orasidan perimetri eng kichik bo’ladigan  uchburchak uchlari koordinatalarini aniqlovchi programma tuzilsin. </p>
+     <p><strong>Array139</strong>. Tekislikdagi N ta nuqta koordinatalari (x,  y) berilgan. Shu nuqtalarni o’sish tartibida joylashtiruvchi programma  tuzilsin. (x1, y1) &lt; (x2, y2) hisoblanadi, agar x1 &lt; x2 bo’lsa, yoki x1 =  x2 va y1 &lt; y2 bo’lsa.</p>
+     <p><strong>Array140</strong>. Tekislikdagi N ta nuqta koordinatalari (x,  y) berilgan. Shu nuqtalarni kamayish tartibida joylashtiruvchi programma  tuzilsin. (x1, y1) &lt; (x2, y2) hisoblanadi, agar x1 + y1 &lt; x2 + y2 bo’lsa,  yoki x1 + y1 = x2 + y2 va x1 &lt; x2  bo’lsa.</p>
+    
+     <p>&nbsp;</p>
+
+  <br>
+  </td>  </tr>  </table>  <!-- Table2 tanasi ichidon-->
+</td>  </tr>
+
+</table>
+ 
+
+</main><!-- /.container -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+</html>

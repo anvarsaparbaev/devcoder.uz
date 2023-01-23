@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+ <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      p {
+      font-size: 20px;
+      font-family: Arial;
+      }
+
+      h1{
+        text-align:center;  
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="starter-template.css" rel="stylesheet">
+  </head>
+  <BODY onkeydown="return noCTRL(event)" onmousedown="return false;" onselectstart="return false;" bottomMargin=0 background="img/bg.gif" leftMargin=0 topMargin=0 rightMargin=0 marginwidth="0" marginheight="0">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand" href="#">Bas bet</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+ <a class="navbar-brand" href="#">Maseleler</a>
+ <a class="navbar-brand" href="#">Sheshimleri</a>
+</nav>
+
+<main role="main" class="container">
+
+<table border=0 cellspacing="0"  cellpadding="0" width=0 align=" ">
+ 
+  <tr>
+    <td>
+  <!-- table2 tanasi -->
+  <table align="left" width="90%" border="0"  cellpadding="0" cellspacing="0">
+  <tr>
+
+ <p>&nbsp;</p>
+    <p>&nbsp;</p>
+             <p><strong><h1> Ikki o’lchamli  massivlar. Matritsalar </h1></strong></p>
+     <ol >
+     <li><a href="matrix.html#chiqarish" class="savol"> Matritsani hosil qilish va uning elementlarini chiqarish</a>. (16 ta masala) </li>
+     <li><a href="matrix.html#taxlil" class="savol">Matritsa elementlarini taxlil qilish</a>. (30 ta masala) </li>
+     <li><a href="matrix.html#ozgartirish" class="savol">Matritsani o’zgartirish</a>. (33 ta masala) </li>
+     <li><a href="matrix.html#diagonal" class="savol">Kvadrat matritsaning diagonallari</a>. (21 ta masala) </li>
+       </ol>
+     <p><a name="chiqarish" href="top">1. Matritsani hosil  qilish va uning elementlarini chiqarish</a></p>
+     <p>Matritsani hosil qilishda uning o’lchamlari 10 x 10  dan ochmaydi deb qaraladi.</p>
+     <p><strong>Matrix1</strong>. m va n butun musbat sonlari berilgan. m x n  o’lchamli matritsani shunday hosil qilingki, uning har bir i – satri  elementlari 10 * i ga teng bo’lsin. (i =0, 1, …, m - 1)</p>
+     <p><strong>Matrix2</strong>. m va n butun musbat sonlari berilgan. m x n  o’lchamli matritsani shunday  hosil  qilingki, uning har bir j – ustuni elementlari 5 * j ga teng bo’lsin. (j =0, 1,  …, n - 1)</p>
+     <p><strong>Matrix3</strong>. m va n butun musbat sonlari va m ta butun sonlar  to’plmi   berilgan. m x n o’lchamli matritsani shunday hosil qilingki, uning har  bir ustuni kiritilgan m ta sondan iborat bo’lsin.</p>
+     <p><strong>Matrix4</strong>. m va n butun musbat sonlari va n ta butun sonlar  to’plmi berilgan. m x n o’lchamli matritsani  shunday hosil qilingki, uning har bir satri kiritilgan n ta sondan iborat  bo’lsin.</p>
+     <p><strong>Matrix5</strong>. m, n va d butun sonlari va m ta butun sonlar to’plmi  berilgan. m x n o’lchamli matritsani shunday hosil qilingki, uning birinchi  ustuni kiritilgan m ta sondan iborat bo’lsin. Qolgan ustunlari, o’zidan bir  oldingi ustunning o’zi turgan satri elementi qiymatiga d sonini qo’shishdan  hosil bo’lsin. (Natijada har bir satrda arifmetik progressiya hosil bo’ladi)</p>
+     <p><strong>Matrix6</strong>. m, n va q butun sonlari va m ta butun sonlar to’plmi  berilgan. m x n o’lchamli matritsani shunday hosil qilingki, uning birinchi  ustuni kiritilgan m ta sondan iborat bo’lsin. Qolgan ustunlari, o’zidan bir  oldingi ustunning o’zi turgan satri elementi qiymatiga q sonini ko’paytirishdan  hosil bo’lsin. (Natijada har bir satrda geometrik progressiya hosil bo’ladi)</p>
+     <p><strong>Matrix7</strong>. m x n o’lchamli matritsa va k soni berilgan (0 &lt;=  k &lt; m ). Matritsaning k – satrini chiqaruvchi programma tuzilsin.</p>
+     <p><strong>Matrix8</strong>. m x n o’lchamli matritsa va k soni berilgan (0 &lt;=  k &lt; n ). Matritsaning k – ustuni elementlarini chiqaruvchi programma  tuzilsin.</p>
+     <p><strong>Matrix9</strong>. m x n o’lchamli matritsa  berilgan. Matritsaning 2 ga karrali (0, 2, 4,  … ) satrlarini chiqaruvchi programma tuzilsin. Shart operatori ishlatilmasin.</p>
+     <p><strong>Matrix10</strong>. m x n o’lchamli matritsa  berilgan. Matritsaning toq indeksli  ustunlarini (1, 3, 5, …) chiqaruvchi programma tuzilsin. Shart operatori  ishlatilmasin.</p>
+     <p><strong>Matrix11</strong>. m x n o’lchamli matritsa  berilgan. Matritsaning elementlarini  quyidagicha chiqaruvchi programma tuzilsin. 0 – satr chapdan o’ngga, 1 – satr  o’ngdan chapga, 2 – satr chapdan o’ngga, …</p>
+     <p><strong>Matrix12</strong>. m x n o’lchamli matritsa  berilgan. Matritsaning elementlarini  quyidagicha chiqaruvchi programma tuzilsin. 0 – ustun tepadan pastga, 1 – ustun  pastdan tepaga, 2  – ustun tepadan  pastga, …</p>
+     <p><strong>Matrix13</strong>. MxM o'lchamli kvadrat matritsa A berilgan. A<sub>0,0</sub>  elementdan boshlab martitsa elementlari quyidagicha chiqarilsin (burchak hosil  qilgan holda): birinchi satrning barcha elementlari; oxirgi ustunning barcha  elementlari (birinchi elementidan tashqari, chunki u chiqarilgan); ikkinchi  satrning qolgan elementlari; oxirdan bir oldingi ustunning qolgan elementlari;  va xakazo; oxirda A<sub>M-1,0</sub> element chiqadi.</p>
+     <p><strong>Matrix14</strong>. MxM o'lchamli kvadrat matritsa A berilgan. A<sub>0,0</sub>  elementdan boshlab martitsa elementlari quyidagicha chiqarilsin (burchak hosil  qilgan holda): birinchi ustunning barcha elementlari; oxirgi satrning barcha  elementlari (birinchi elementidan tashqari, chunki u chiqarilgan); ikkinchi  ustunning qolgan elementlari; oxirdan bir oldingi satrning qolgan elementlari;  va xakazo; oxirda A<sub>0,M-1</sub> element chiqadi.</p>
+     <p><strong>Matrix15</strong>. NxN o'lchamli kvadrat matritsa A hosil qilinsin. A<sub>0,0</sub> elementdan boshlab, soat strelkasi bo'yicha martitsa  elementlariga 1, 2, 3, ..., N<sup>2</sup> gacha bo'gan sonlar o'zlashtirilsin. Rasmga qarang.</p>
+     <div align="center"><img src="img/matrix_clip_image001.png" ></div>
+            <p>
+              <strong>Matrix16</strong>. NxN o'lchamli kvadrat matritsa A hosil qilinsin. A<sub>0,0</sub> elementdan boshlab, soat strelkasiga qarama - qarshi ravishda martitsa  elementlariga 1, 2, 3, ..., N<sup>2</sup> gacha bo'gan sonlar o'zlashtirilsin. Matrix15 masalasiga teskari yo'nalishda. </p>
+        <p>&nbsp;</p>
+     <p><a name="taxlil" href="#top">2. Matritsa  elementlarini taxlil qilish</a></p>
+     <p><strong>Matrix17</strong>. m x n o’lchamli matritsa va k soni berilgan (0 &lt;=  k &lt; m ). Matritsaning k – satri elementlari yig’indisini va ko’paytmasini  chiqaruvchi programma tuzilsin.</p>
+     <p><strong>Matrix18</strong>. m x n o’lchamli matritsa va k soni berilgan (0 &lt;=  k &lt; n ). Matritsaning k – ustuni elementlari yig’indisini va ko’paytmasini  chiqaruvchi programma tuzilsin.</p>
+     <p><strong>Matrix19</strong>. m x n o’lchamli matritsa berilgan. Matritsaning har  bir satri elementlari yig’indisini chiqaruvchi programma tuzilsin.</p>
+     <p><strong>Matrix20</strong>. m x n o’lchamli matritsa berilgan. Matritsaning har  bir ustuni elementlari ko’paytmasini chiqaruvchi programma tuzilsin.</p>
+     <p><strong>Matrix21</strong>. m x n o’lchamli matritsa  berilgan. Matritsaning har bir satri uchun 
+       toq indeksli ustunlarining (1, 3, 5, …) o’rta  arifmetigini chiqaruvchi programma tuzilsin. Shart operatori ishlatilmasin.</p>
+     <p><strong>Matrix22</strong>. m x n o’lchamli matritsa  berilgan. Matritsaning har bir ustuni uchun 
+       2 ga karrali satrlarining (0, 2, 4, …) yig’indisini  chiqaruvchi programma tuzilsin. Shart operatori ishlatilmasin.</p>
+     <p><strong>Matrix23</strong>. m x n o’lchamli matritsa  berilgan. Matritsa har bir satrining eng  kichik elementini chiqaruvchi programma tuzilsin. </p>
+     <p><strong>Matrix24</strong>. m x n o’lchamli matritsa  berilgan. Matritsa har bir ustunining eng  katta elementini chiqaruvchi programma tuzilsin. </p>
+     <p><strong>Matrix25</strong>. m x n o’lchamli matritsa  berilgan (faqat musbat sonlar).  Elementlari yig’indisi eng katta bo’lsan  satrining indeksini va shu sart elementlari yig’indisini chiqaruvchi programma  tuzilsin. </p>
+     <p><strong>Matrix26</strong>. m x n o’lchamli matritsa  berilgan. Elementlari ko’paytmasi eng kichik  bo’lsan ustunning indeksini va shu ko’paytmani chiqaruvchi programma tuzilsin. </p>
+     <p><strong>Matrix27</strong>. m x n o’lchamli matritsa  berilgan. Elementlari yig’indisi eng kichik  bo’lsan satrining, eng katta elementini chiqaruvchi programma tuzilsin. </p>
+     <p><strong>Matrix28</strong>. m x n o’lchamli matritsa  berilgan. Elementlari yig’indisi eng katta bo’lsan  ustunning, eng kichik elementini chiqaruvchi programma tuzilsin. </p>
+     <p><strong>Matrix29</strong>. m x n o’lchamli matritsa  berilgan. Har bir satrda, shu satr o’rta  arifmetigidan kichik bo’lgan elementlar sonini chiqaruvchi programma tuzilsin.</p>
+     <p><strong>Matrix30</strong>. m x n o’lchamli matritsa  berilgan. Har bir ustunda, shu ustun o’rta  arifmetigidan katta bo’lgan elementlar sonini chiqaruvchi programma tuzilsin.</p>
+     <p><strong>Matrix31</strong>. m x n o’lchamli matritsa  berilgan. Matritsa barcha elementlari o’rta  arifmetigiga, o’rta arifmetigi eng yaqin bo’lgan satr va ustun nomerini chiqaruvchi  programma tuzilsin.</p>
+     <p><strong>Matrix32</strong>. m x n o’lchamli matritsa  berilgan. Musbat va manfiy elementlari soni  teng bo’lgan (nol inobatga olinmaydi) birinchi uchragan satr nomerini  aniqlovchi programma tuzilsin. Agar bunday satr bo’lmasa, “Bunday satr yo’q”  deb chiqarilsin.</p>
+     <p><strong>Matrix33</strong>. m x n o’lchamli  matritsa  berilgan. Musbat va manfiy  elementlari soni teng bo’lgan (nol inobatga olinmaydi) oxirgi ustun nomerini  aniqlovchi programma tuzilsin. Agar bunday ustun bo’lmasa, “Bunday ustun yo’q”  deb chiqarilsin.     </p>
+     <p><strong>Matrix34</strong>. m x n o’lchamli matritsa  berilgan. Faqat juft sonlardan iborat bo’lgan  oxirgi satr nomerini aniqlovchi programma tuzilsin. Agar bunday satr bo’lmasa,  “Bunday satr yo’q” deb chiqarilsin.</p>
+     <p><strong>Matrix35</strong>. m x n o’lchamli matritsa  berilgan. Faqat toq sonlardan iborat bo’lgan  birinchi ustun nomerini aniqlovchi programma tuzilsin. Agar bunday ustun  bo’lmasa, “Bunday ustun yo’q” deb chiqarilsin.</p>
+     <p><strong>Matrix36</strong>. m x n o’lchamli matritsa  berilgan. Massivning har xil satrlari  o’xshash deyiladi, agar satrlardagi sonlar bir xil bo’lsa. Dastlabki satrga  o’xshash bo’lgan satrlar sonini aniqlovchi programma tuzilsin. </p>
+     <p><strong>Matrix37</strong>. m x n o’lchamli matritsa  berilgan. Massivning har xil ustunlari  o’xshash deyiladi, agar ustunlardagi sonlar bir xil bo’lsa. Oxirgi ustunga  o’xshash bo’lgan ustunlar sonini aniqlovchi programma tuzilsin. </p>
+     <p><strong>Matrix38</strong>. m x n o’lchamli matritsa  berilgan. Elementlari har xil bo’lgan satrlar  sonini aniqlovchi programma tuzilsin. </p>
+     <p><strong>Matrix39</strong>. m x n o’lchamli matritsa  berilgan. Elementlari har xil bo’lgan  ustunlar sonini aniqlovchi programma tuzilsin. </p>
+     <p><strong>Matrix40</strong>. m x n o’lchamli matritsa  berilgan. Bir xil elementlar soni eng ko’p  bo’lgan oxirgi satrni aniqlovchi programma tuzilsin. </p>
+     <p><strong>Matrix41</strong>. m x n o’lchamli matritsa  berilgan. Bir xil elementlar soni eng ko’p  bo’lgan birinchi ustunni aniqlovchi programma tuzilsin. </p>
+     <p><strong>Matrix42</strong>. m x n o’lchamli matritsa  berilgan. Elementlari o’sish tartibida kiritilgan  satrlar sonini aniqlovchi programma tuzilsin.</p>
+     <p><strong>Matrix43</strong>. m x n o’lchamli matritsa  berilgan. Elementlari kamayish tartibida  kiritilgan ustunlar sonini aniqlovchi programma tuzilsin.</p>
+     <p><strong>Matrix44</strong>. m x n o’lchamli matritsa  berilgan. Elementlari kamayish yoki o’sish  tartibida kiritilgan satrlar orasidan, eng kichik qiymatni aniqlovchi programma  tuzilsin. Agar tartiblangan satr bo’lmasa, nol chiqarilsin.</p>
+     <p><strong>Matrix45</strong>. m x n o’lchamli matritsa  berilgan. Elementlari kamayish yoki o’sish  tartibida kiritilgan ustunlar orasidan, eng katta qiymatni aniqlovchi programma  tuzilsin. Agar tartiblangan ustun bo’lmasa, nol chiqarilsin.</p>
+     <p><strong>Matrix46</strong>. m x n o’lchamli matritsa  berilgan. O’zi turgan satrda eng kattasi va  o’zi turgan ustunda eng kichigi bo’lsan elementni aniqlovchi programma  tuzilsin. Agar bunday element bo’lmasa, nol chiqarilsin.</p>
+     <p><a name="ozgartirish" href="#top">3. Matritsani o’zgartirish</a></p>
+     <p>Bu bo’limdagi masalalarni yechishda qo’shimcha matritsadan foydalanmang.  (Matrix74 va Matrix75 da foydalanish mumkin)</p>
+     <p><strong>Matrix47</strong>. m x n o’lchamli matritsa  va k1, k2 butun sonlari berilgan (0 &lt;=k1  &lt; k2 &lt; m). k1 va k2 satr elementlarini almashtiruvchi programma tuzilsin. </p>
+     <p><strong>Matrix48</strong>. m x n o’lchamli matritsa  va k1, k2 butun sonlari berilgan (0 &lt;= k1  &lt; k2 &lt; n). k1 va k2 ustun elementlarini almashtiruvchi programma tuzilsin. </p>
+     <p><strong>Matrix49</strong>. m x n o’lchamli matritsa  berilgan. Har bir satrdagi eng kichik va eng katta  element o’rinlarini almashtiruvchi programma tuzilsin. </p>
+     <p><strong>Matrix50</strong>. m x n o’lchamli matritsa  berilgan. Har bir ustundagi eng kichik va eng  katta element o’rinlarini almashtiruvchi programma tuzilsin. </p>
+     <p><strong>Matrix51</strong>. m x n o’lchamli matritsa  berilgan. Matritsadagi eng kichik va eng  katta element joylashgan satrlar o’rinlarini almashtiruvchi programma tuzilsin. </p>
+     <p><strong>Matrix52</strong>. m x n o’lchamli matritsa  berilgan. Matritsadagi eng kichik va eng  katta element joylashgan ustunlar o’rinlarini almashtiruvchi programma  tuzilsin. </p>
+     <p><strong>Matrix53</strong>. m x n o’lchamli matritsa  berilgan. Matritsaning dastlabki ustuni bilan  faqat musbat elementlardan tashkil topgan eng oxirgi ustunni almashtiruvchi  programma tuzilsin. Agar bunday ustun bo’lmasa, matritsa o’zgarishsiz  qoldirilsin.</p>
+     <p><strong>Matrix54</strong>. m  x n o’lchamli matritsa  berilgan.  Matritsaning oxirgi ustuni bilan faqat manfiy elementlardan tashkil topgan eng  birinchi ustunni almashtiruvchi programma tuzilsin. Agar bunday ustun bo’lmasa,  matritsa o’zgarishsiz qoldirilsin.     </p>
+     <p><strong>Matrix55</strong>. m x n o’lchamli matritsa  berilgan (m juft son). Matritsaning teng  yarmidan yuqorisi va pastini almashtiruvchi programma tuzilsin.</p>
+     <div align="center">
+           <table width="157" border="1" cellpadding="0" cellspacing="0">
+             <tr>
+               <td width="84" valign="top"><p><strong> Matritsa </strong></p></td>
+               <td width="85" valign="top"><p><strong>Natija</strong></p></td>
+             </tr>
+             <tr>
+               <td width="84" valign="top"><p>1 1 1<br>
+                 2 2 2<br>
+                 3 3 3<br>
+                 4 4 4</p></td>
+               <td width="85" valign="top"><p>3 3 3<br>
+                 4 4 4<br>
+                 1 1 1<br>
+                 2 2 2</p></td>
+             </tr>
+           </table>
+       </div>
+     <p>&nbsp;</p>
+     <p><strong>Matrix56</strong>. m x n o’lchamli matritsa  berilgan (n juft son). Matritsaning teng  yarmidan chap va ong qismini almashtiruvchi programma tuzilsin.</p>
+     <div align="center">
+           <table border="1" cellspacing="0" cellpadding="0">
+             <tr>
+               <td width="84" valign="top"><p><strong>Matritsa  </strong></p></td>
+               <td width="85" valign="top"><p><strong>Natija</strong></p></td>
+             </tr>
+             <tr>
+               <td width="84" valign="top"><p>1 2 3 4<br>
+                 1 2 3 4<br>
+                 1 2 3 4</p></td>
+               <td width="85" valign="top"><p>3 4 1 2 <br>
+                 3 4 1 2 <br>
+                 3 4 1 2</p></td>
+             </tr>
+           </table>
+       </div>
+     <p><strong>Matrix57</strong>. m x n o’lchamli matritsa  berilgan (n va m juft son). Matritsa teng 4  qismga bo’lingan. 1 – chap yuqori, 2 – ong yuqori, 3 – chap past, 4 – ong past.  1 – va 4 qismini almashtiruvchi programma tuzilsin.</p>
+     <div align="center">
+           <table border="1" cellspacing="0" cellpadding="0">
+             <tr>
+               <td width="84" valign="top"><p><strong>
+                 Matritsa</strong></p> </td>
+               <td width="85" valign="top"><p><strong>Natija</strong></p></td>
+             </tr>
+             <tr>
+               <td width="84" valign="top"><p>1 2<br>
+                 3 4<br>
+                 5 6<br>
+                 7 8 </p></td>
+               <td width="85" valign="top"><p>6 2<br>
+                 8 4<br>
+                 5 1<br>
+                 7 3</p></td>
+             </tr>
+           </table>
+       </div>
+     <p><strong>Matrix58</strong>. m x n o’lchamli matritsa  berilgan (n va m juft son). Matritsa teng 4  qismga bo’lingan. 1 – chap yuqori, 2 – ong yuqori, 3 – chap past, 4 – ong past.  2 – va 3 qismini almashtiruvchi programma tuzilsin.</p>
+     <div align="center">
+           <table border="1" cellspacing="0" cellpadding="0">
+             <tr>
+               <td width="84" valign="top"><p><strong>
+                 Matritsa </strong></p></td>
+               <td width="85" valign="top"><p><strong>Natija</strong></p></td>
+             </tr>
+             <tr>
+               <td width="84" valign="top"><p>1 2<br>
+                 3 4<br>
+                 5 6<br>
+                 7 8 </p></td>
+               <td width="85" valign="top"><p>1 5<br>
+                 3 7<br>
+                 2 6<br>
+                 4 8</p></td>
+             </tr>
+           </table>
+       </div>
+     <p><strong>Matrix59</strong>. m x n o’lchamli matritsa berilgan. Matritsa  elementlarini quyidagicha almashtiring: 0 va m - 1 satr elementlari almashsin, 1  va m - 2 satr elementlari almashsin va hakazo.</p>
+      <div align="center">
+           <table border="1" cellspacing="0" cellpadding="0">
+             <tr>
+               <td width="84" valign="top"><p><strong>
+                 Matritsa </strong></p></td>
+               <td width="85" valign="top"><p><strong>Natija</strong></p></td>
+             </tr>
+             <tr>
+               <td width="84" valign="top"><p>1 2 3 <br>
+               4 
+                 5 6<br>
+                 7 8 9 </p></td>
+               <td width="85" valign="top"><p>7 8 9 <br>
+               4 5 6<br>
+                 1 2 3
+</p></td>
+             </tr>
+           </table>
+       </div>
+     <p><strong>Matrix60</strong>. m x n o’lchamli matritsa berilgan. Matritsa  elementlarini quyidagicha almashtiring: 0 va n - 1 ustun elementlari almashsin, 1  va n - 2 ustun elementlari almashsin va hakazo.</p>
+      <div align="center">
+           <table border="1" cellspacing="0" cellpadding="0">
+             <tr>
+               <td width="84" valign="top"><p><strong>
+                 Matritsa </strong></p></td>
+               <td width="85" valign="top"><p><strong>Natija</strong></p></td>
+             </tr>
+             <tr>
+               <td width="84" valign="top"><p>1 2 
+                 3<br>
+                 4 
+                 5 6<br>
+                 7 8 9
+</p></td>
+               <td width="85" valign="top"><p>3 2 1<br>
+                 6 5 4<br>
+                 9 8 7
+</p></td>
+             </tr>
+           </table>
+       </div>
+     <p><strong>Matrix61</strong>. m x n o’lchamli matritsa va k butun soni berilgan  (0&lt;= k &lt;m) . Matritsaning k – satrini o’chiruvchi programma tuzilsin.</p>
+     <p><strong>Matrix62</strong>. m x n o’lchamli matritsa va k butun soni berilgan  (0&lt;= k &lt;n) . Matritsaning k – ustunini o’chiruvchi programma tuzilsin.</p>
+     <p><strong>Matrix63</strong>. m x n o’lchamli matritsa berilgan. Matritsaning eng  kichik elementi joylashgan satrini o’chiruvchi programma tuzilsin.</p>
+     <p><strong>Matrix64</strong>. m x n o’lchamli matritsa berilgan. Matritsaning eng  katta elementi joylashgan ustunni o’chiruvchi programma tuzilsin.</p>
+     <p><strong>Matrix65</strong>. m x n o’lchamli matritsa berilgan. Matritsaning  faqat musbat elementlardan tashkil topgan birinchi uchragan ustunini  o’chiruvchi programma tuzilsin.</p>
+     <p><strong>Matrix66</strong>. m x n o’lchamli matritsa berilgan. Matritsaning  faqat manfiy elementlardan tashkil topgan oxirgi uchragan ustunini o’chiruvchi  programma tuzilsin.</p>
+     <p><strong>Matrix67</strong>. m x n o’lchamli matritsa berilgan. Matritsaning  faqat musbat elementlardan tashkil topgan barcha ustunlarni o’chiruvchi  programma tuzilsin.</p>
+     <p><strong>Matrix68</strong>. m x n o’lchamli matritsa va k butun soni berilgan  (0&lt;= k &lt;m). Matritsaning k – satri oldidan elementlari qiymati nolga teng  bo’lgan satr qo’shuvchi programma tuzilsin.</p>
+     <p><strong>Matrix69</strong>. m x n o’lchamli matritsa va k butun soni berilgan  (0&lt;= k &lt;n). Matritsaning k – ustunidan keyin elementlari qiymati birga  teng bo’lgan ustun qo’shuvchi programma tuzilsin.</p>
+     <p><strong>Matrix70</strong>. m x n o’lchamli matritsa berilgan. Matritsaning eng  katta elementi joylashgan satrdan keyin, yana shunday satr qo’shuvchi programma  tuzilsin.</p>
+     <p><strong>Matrix71</strong>. m x n o’lchamli matritsa berilgan. Matritsaning eng kichik  elementi joylashgan ustundan keyin, yana shunday ustun qo’shuvchi programma  tuzilsin.</p>
+     <p><strong>Matrix72</strong>. m x n o’lchamli matritsa berilgan. Matritsaning  faqat musbat elementlardan tashkil topgan birinchi uchragan ustunidan oldin,  elementlari qiymati birga teng bo’lgan ustun qo’shuvchi programma tuzilsin. Agar  bunday ustun bo’lmasa, matritsa o’zgarishsiz chiqarilsin.</p>
+     <p><strong>Matrix73</strong>. m x n o’lchamli matritsa berilgan. Matritsaning  faqat manfiy elementlardan tashkil topgan oxirgi uchragan ustunidan keyin,  elementlari qiymati nolga teng bo’lgan ustun qo’shuvchi programma tuzilsin.  Agar bunday ustun bo’lmasa, matritsa o’zgarishsiz chiqarilsin.</p>
+     <p><strong>Matrix74</strong>. m x n o’lchamli matritsa berilgan. Matritsaning  barcha lokal minimum qiymatlarini nolga almashtiruvchi programma tuzilsin. Element  lokal minimum deyiladi, agar u barcha qo’shnilaridan kichik bo’lsa. Yordamchi  matritsadan foydalanishga ruhsat etiladi.</p>
+     <p><strong>Matrix75</strong>. m x n o’lchamli matritsa berilgan. Matritsaning  barcha lokal maksimum qiymatlarini nolga almashtiruvchi programma tuzilsin.  Element lokal maksimum deyiladi, agar u barcha qo’shnilaridan katta bo’lsa.  Yordamchi matritsadan foydalanishga ruhsat etiladi.</p>
+     <p><strong>Matrix76</strong>. m x n o’lchamli matritsa berilgan. Matritsaning  satrlarini shunday o'zgartiringki, natijada nolinchi ustun elementlari o’sish tartibida joylashtirilsin.</p>
+     <p><strong>Matrix77</strong>. m x n o’lchamli matritsa berilgan. Matritsaning  ustunlarini shunday o'zgartiringki, natijada oxirgi satri elementlari kamayish tartibida joylashtirilsin.</p>
+     <p><strong>Matrix78</strong>. m x n o’lchamli matritsa berilgan. Matritsa  satrlarini shunday tartiblangi, satrlarning minimal elementlari kamayish  tartibida bo'lsin.</p>
+     <p><strong>Matrix79</strong>. m x n o’lchamli matritsa berilgan. Matritsa  ustunlarini shunday tartiblangi, ustunlarning maksimal elementlari o'sish  tartibida bo'lsin.</p>
+     <p><a name="diagonal" href="#top">4. Kvadrat matritsaning diagonallari</a></p>
+     <p><strong>Matrix80</strong>. m x m o’lchamli kvadrat matritsa berilgan.  Matritsaning asosiy dioganali elementlari yig’indisini chiqaruvchi programma  tuzilsin.</p>
+     <p><strong>Matrix81</strong>. m x m o’lchamli kvadrat matritsa berilgan. Matritsaning  yordamchi dioganali elementlari o’rta arifmetigini chiqaruvchi programma  tuzilsin.</p>
+     <p><strong>Matrix82</strong>. m x m o’lchamli kvadrat matritsa berilgan.  Matritsaning asosiy dioganaliga parallel bo'lgan har bir dioganal  elementlari yig'indisini aniqlovchi programma tuzilsin. Bir elementli dioganal A<sub>0,M-1</sub>  dan boshlansin.</p>
+     <p><strong>Matrix83</strong>. m x m o’lchamli kvadrat matritsa berilgan.  Matritsaning yordamchi dioganaliga parallel bo'lgan har bir dioganal elementlari  yig'indisini aniqlovchi programma tuzilsin. Bir elementli dioganal A<sub>0,0</sub>  dan boshlansin.</p>
+     <p><strong>Matrix84</strong>. m x m o’lchamli kvadrat matritsa berilgan.  Matritsaning asosiy dioganaliga parallel bo'lgan har bir dioganal  elementlari o'rta arifmetigini hisoblovchi programma tuzilsin. Bir elementli dioganal A<sub>0,M-1</sub> dan boshlansin.</p>
+     <p><strong>Matrix85</strong>. m x m o’lchamli kvadrat matritsa berilgan.  Matritsaning yordamchi dioganaliga parallel bo'lgan har bir dioganal elementlari  o'rta arifmetigini hisoblovchi programma tuzilsin. Bir elementli dioganal A<sub>0,0</sub> dan boshlansin.</p>
+     <p><strong>Matrix86</strong>. m x m o’lchamli kvadrat matritsa berilgan.  Matritsaning asosiy dioganaliga parallel bo'lgan har bir dioganali elementlarining eng  kichigini aniqlovchi programma tuzilsin. Bir elementli dioganal A<sub>0,M-1</sub>  dan boshlansin.</p>
+     <p><strong>Matrix87</strong>. m  x m o’lchamli kvadrat matritsa berilgan. Matritsaning yordamchi dioganaliga  parallel bo'lgan har bir dioganali elementlarining eng kattasini aniqlovchi  programma tuzilsin. Bir elementli dioganal A<sub>0,0</sub> dan boshlansin.</p>
+     <p><strong>Matrix88</strong>. m x m o’lchamli kvadrat matritsa berilgan.  Matritsaning asosiy dioganalida va undan pastda joylashgan barcha elementlarini  nolga almashtiruvchi programma tuzilsin. Shart operatoridan foydalanmang.</p>
+     <p><strong>Matrix89</strong>. m x m o’lchamli kvadrat matritsa berilgan.  Matritsaning yordamchi dioganalida va undan yuqorida joylashgan barcha  elementlarini nolga almashtiruvchi programma tuzilsin. Shart operatoridan  foydalanmang.</p>
+     <p><strong>Matrix90</strong>. m x m o’lchamli kvadrat matritsa berilgan.  Matritsaning yordamchi dioganalida va undan pastda joylashgan barcha  elementlarini nolga almashtiruvchi programma tuzilsin. Shart operatoridan foydalanmang.</p>
+     <p><strong>Matrix91</strong>. m x m o’lchamli kvadrat matritsa berilgan.  Matritsaning asosiy dioganalida va undan yuqorida joylashgan barcha  elementlarini nolga almashtiruvchi programma tuzilsin. Shart operatoridan  foydalanmang.</p>
+     <p><strong>Matrix92</strong>. m  x m o’lchamli kvadrat matritsa berilgan. Matritsaning asosiy va yordamchi  dioganallarida va ulardan yuqorida joylashgan  barcha elementlarini nolga almashtiruvchi programma tuzilsin. Shart  operatoridan foydalanmang.
+     1 - rasmning e shakliga qarang. </p>
+     <div align="center"> 
+       <img src="img/massiv.gif"><br>
+      1 - Rasm.   Kvadrat matritsa
+       <p>&nbsp;</p>
+     </div>
+     <p><strong>Matrix93</strong>. m x m o’lchamli kvadrat matritsa berilgan. 1 -  rasmning h shaklida bo’yalgan sohani nolga almashtiruvchi programma tuzilsin.  Shart operatoridan foydalanmang.</p>
+     <p><strong>Matrix94</strong>. m x m o’lchamli kvadrat matritsa berilgan. 1 -  rasmning i shaklida bo’yalgan sohani nolga almashtiruvchi programma tuzilsin.  Shart operatoridan foydalanmang.</p>
+     <p><strong>Matrix95</strong>. m  x m o’lchamli kvadrat matritsa berilgan. 1 - rasmning f shaklida bo’yalgan  sohani nolga almashtiruvchi programma tuzilsin. Shart operatoridan foydalanmang.
+     </p>
+     <p><strong>Matrix96</strong>. m x m o’lchamli kvadrat matritsa berilgan. Matritsa  elementlarini asosiy dioganalga nisbatan almashtiruvchi programma tuzilsin. Asosiy  dioganal o’zgarishsiz qoldiriladi, A<sub>0,1</sub> - element A<sub>1,0</sub> bilan  almashadi, A<sub>i,j</sub> – element A<sub>j,i</sub> bilan almashadi. Yordamchi  matritsadan foydalanmang.</p>
+     <p><strong>Matrix97</strong>. m x m o’lchamli kvadrat matritsa berilgan. Matritsa  elementlarini yordamchi dioganalga nisbatan almashtiruvchi programma tuzilsin. Yordamchi  dioganal o’zgarishsiz qoldiriladi, A<sub>0,0</sub> - element A<sub>m-1,m-1</sub>  bilan almashadi, A<sub>0,1</sub> – element A<sub>m-1,m-2</sub> bilan almashadi, va  hakazo. Yordamchi matritsadan foydalanmang.</p>
+     <p><strong>Matrix98</strong>. m x m o’lchamli kvadrat matritsa berilgan. Matritsani  180<sup>0</sup> ga buruvchi programma tuzilsin. Bunda, A<sub>0,0</sub> -  element A<sub>m-1,m-1</sub> bilan almashadi, A<sub>0,1</sub> – element A<sub>m-1,m-2</sub>  bilan almashadi, va hakazo. Yordamchi matritsadan foydalanmang.</p>
+     <p><strong>Matrix99</strong>. m x m o’lchamli kvadrat matritsa berilgan. Matritsani  90<sup>0</sup> ga soat strelkasiga qarama – qarshi ravishda buruvchi programma  tuzilsin. Bunda, A<sub>0,0</sub> - element A<sub>m-1,0</sub> ga o’tadi, A<sub>m-1,0</sub>  – element A<sub>m-1,m-1</sub> ga o’tadi, va hakazo. Yordamchi matritsadan  foydalanmang.</p>
+     <p><strong>Matrix100</strong>. m x m o’lchamli kvadrat matritsa berilgan. Matritsani  90<sup>0</sup> ga soat strelkasiga bo’yicha buruvchi programma tuzilsin. Bunda,  A<sub>0,0</sub> - element A<sub>0,m</sub> ga o’tadi, A<sub>0,m</sub> – element A<sub>m-1,m-1</sub>  ga o’tadi, va hakazo. Yordamchi matritsadan foydalanmang.</p>
+     <p>&nbsp;</p>
+     <p>&nbsp;</p>
+
+  <br>
+  </td>  </tr>  </table>  <!-- Table2 tanasi ichidon-->
+</td>  </tr>
+
+</table>
+ 
+
+</main><!-- /.container -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+</html>
